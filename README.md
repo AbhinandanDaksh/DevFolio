@@ -26,7 +26,7 @@
 - 🌊 **AOS scroll animations** — elements animate every time they enter view
 - ✨ **Micro-animations** — shimmer, glow, spring bounce on skills & projects
 - 📱 **Fully responsive** — mobile-first, hamburger menu with overlay
-- ⚙️ **Config-driven** — edit **4 files only**, zero component changes needed
+- ⚙️ **Config-driven** — edit **5 files only**, zero component changes needed
 - ♿ **Accessible** — semantic HTML, focus rings, skip link, ARIA labels
 - 🚀 **Fast** — Vite build, GPU-accelerated CSS animations
 
