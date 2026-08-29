@@ -1,11 +1,14 @@
 export const skills = [
-  "React",
-  "JavaScript",
-  "Node.js",
-  "Express.js",
-  "MongoDB",
-  "Tailwind CSS",
-  "Redux",
-  "Git",
-  "GitHub",
+  {
+    title: 'Languages & Markup',
+    items: ['HTML5', 'CSS3', 'JavaScript', 'TypeScript'],
+  },
+  {
+    title: 'Frameworks & Libraries',
+    items: ['React', 'Node.js', 'Express.js', 'Next.js', 'Tailwind CSS'],
+  },
+  {
+    title: 'Tools & Other',
+    items: ['MongoDB', 'Git', 'GitHub', 'Redux', 'Figma'],
+  },
 ];

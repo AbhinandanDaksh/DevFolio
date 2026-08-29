@@ -1,4 +1,4 @@
-// Social icon SVGs — config ke 'icon' field se match karta hai
+/** Renders an SVG icon by name. Supported values: 'github' | 'linkedin' | 'twitter' */
 export function SocialIcon({ name, className = 'w-6 h-6' }) {
   if (name === 'github') {
     return (

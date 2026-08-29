@@ -126,6 +126,28 @@
 .delay-5 { animation-delay: 0.5s; }
 .delay-6 { animation-delay: 0.6s; }
 
+/* ── Skill tag staggered pop-in ──────────────────────────── */
+@keyframes tag-pop {
+  0%   { opacity: 0; transform: scale(0.75) translateY(8px); }
+  70%  { transform: scale(1.05) translateY(-2px); }
+  100% { opacity: 1; transform: scale(1) translateY(0); }
+}
+
+.skill-tag-animate {
+  opacity: 0;
+  animation: tag-pop 0.4s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+  animation-delay: var(--tag-delay, 0ms);
+}
+
+/* Pause tag animations when reduced motion is preferred */
+@media (prefers-reduced-motion: reduce) {
+  .skill-tag-animate {
+    animation: none;
+    opacity: 1;
+  }
+}
+
+
 
 
 * {
@@ -134,11 +156,14 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
   margin: 0;
   font-family: var(--font-sans);
+  overflow-x: hidden;
+  width: 100%;
 }
 
 /* Focus visible for keyboard UX */
