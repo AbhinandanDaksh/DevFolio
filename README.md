@@ -58,19 +58,19 @@ Open [http://localhost:5173](http://localhost:5173) in your browser.
 ### `src/config/profile.js` — Your info
 ```js
 export const profile = {
-  name: 'Abhinandan Daksh',         // ← Apna naam
+  name: 'John Doe',                 // ← Your name
   tagline: 'I build things for the web.',
   shortBio: 'Full Stack Developer based in India',
-  roles: [                          // ← Typewriter mein yeh cycle honge
+  roles: [                          // ← These will cycle in the typewriter
     'Full Stack Developer',
     'React Enthusiast',
     'Open Source Contributor',
   ],
-  resumeUrl: '/resume.pdf',         // ← public/ folder mein rakhein
-  about: [                          // ← About section paragraphs
+  resumeUrl: '/resume.pdf',         // ← Place in the public/ folder
+  about: [                          // ← Paragraphs for the About section
     "I'm a developer who ...",
   ],
-  photoUrl: '/photo.jpg',           // ← null rakhein agar photo nahi chahiye
+  photoUrl: '/photo.jpg',           // ← Set to null if you don't want a photo
   contactHeading: "Let's work together",
   contactSubtext: "I'm open to new projects ...",
 };
@@ -178,7 +178,7 @@ npm run build
 
 ### GitHub Pages
 ```bash
-# vite.config.js mein base set karein:
+# Set base in vite.config.js:
 # base: '/repo-name/'
 npm run build
 ```
