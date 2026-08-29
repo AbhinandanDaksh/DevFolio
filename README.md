@@ -10,7 +10,7 @@
 [![AOS](https://img.shields.io/badge/AOS-Animations-34D399?style=flat-square)](https://michalsnik.github.io/aos/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green?style=flat-square)](./LICENSE)
 
-[Live Demo](#) · [Report Bug](issues) · [Request Feature](issues)
+[🚀 Live Demo](https://dev-folio-bay.vercel.app/) · [Report Bug](https://github.com/AbhinandanDaksh/DevFolio/issues) · [Request Feature](https://github.com/AbhinandanDaksh/DevFolio/issues)
 
 ![Portfolio Preview](./public/preview.png)
 
@@ -118,7 +118,7 @@ export const email = 'you@example.com';
 
 ```
 src/
-├── config/                 ← ✏️  Edit these to personalize
+├── config/                 ← Edit these to personalize
 │   ├── profile.js          ← Name, bio, roles, about, contact
 │   ├── skills.js           ← Skill groups
 │   ├── projects.js         ← Project cards
@@ -141,7 +141,6 @@ src/
 ├── context/
 │   └── ThemeContext.jsx    ← Dark/light theme context
 │
-├── portfolio.config.js     ← (legacy, unused)
 ├── App.jsx                 ← AOS init + layout
 └── index.css               ← Theme variables + animations
 ```
@@ -206,5 +205,9 @@ See [LICENSE](./LICENSE) for details.
 ---
 
 <div align="center">
-  Made with ❤️ by <a href="https://github.com/AbhinandanDaksh">Abhinandan Daksh</a>
+  <p>Made with ❤️ by <a href="https://github.com/AbhinandanDaksh">Abhinandan Daksh</a></p>
+  <p>
+    <a href="https://dev-folio-bay.vercel.app/">🚀 Live Demo</a> ·
+    <a href="https://github.com/AbhinandanDaksh/DevFolio">⭐ Star on GitHub</a>
+  </p>
 </div>
