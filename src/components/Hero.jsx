@@ -1,14 +1,8 @@
 import { useTypewriter } from '../hooks/useTypewriter';
-
-const roles = [
-  'Frontend Developer',
-  'React Enthusiast',
-  'UI/UX Craftsman',
-  'Open Source Contributor',
-];
+import config from '../portfolio.config';
 
 export default function Hero() {
-  const typedRole = useTypewriter(roles, 85, 45, 2000);
+  const typedRole = useTypewriter(config.roles, 85, 45, 2000);
 
   return (
     <section id="hero" className="min-h-screen flex items-center justify-center px-5 pt-20 pb-16 bg-[var(--bg)] relative overflow-hidden">
@@ -20,21 +14,19 @@ export default function Hero() {
         <div className="inline-flex items-center gap-2 mb-6 animate-fade-in-up opacity-0 delay-1">
           <span className="text-[var(--accent-muted)] text-sm font-medium tracking-widest uppercase">
             {typedRole}
-            {/* blinking cursor */}
             <span className="inline-block w-[2px] h-[1em] bg-[var(--accent)] ml-0.5 align-middle animate-[blink_1s_step-end_infinite]" aria-hidden="true" />
           </span>
         </div>
 
         <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-[var(--text)] tracking-tight leading-tight mb-6 animate-fade-in-up opacity-0 delay-2">
           Hi, I&apos;m{' '}
-          <span className="text-[var(--accent)] inline-block animate-float">Your Name</span>
+          <span className="text-[var(--accent)] inline-block animate-float">{config.name}</span>
           <br />
-          I build things for the web.
+          {config.tagline}
         </h1>
 
         <p className="text-[var(--text-muted)] text-lg max-w-xl mx-auto mb-10 animate-fade-in-up opacity-0 delay-3">
-          I craft responsive, accessible, and performant user interfaces with React,
-          modern CSS, and a focus on great UX.
+          {config.shortBio}
         </p>
 
         <div className="flex flex-wrap justify-center gap-4 animate-fade-in-up opacity-0 delay-4">
@@ -47,7 +39,7 @@ export default function Hero() {
 
           {/* Resume Download Button */}
           <a
-            href="/resume.pdf"
+            href={config.resumeUrl}
             download
             className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl border border-[var(--accent)]/50 text-[var(--accent)] hover:bg-[var(--accent)]/10 hover:border-[var(--accent)]/80 active:scale-[0.98] transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--accent)]/50 focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--bg)] group"
             aria-label="Download my resume"

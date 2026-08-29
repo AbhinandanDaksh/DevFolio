@@ -1,17 +1,4 @@
-const skillGroups = [
-  {
-    title: 'Languages & Markup',
-    items: ['HTML5', 'CSS3', 'JavaScript', 'TypeScript'],
-  },
-  {
-    title: 'Frameworks & Libraries',
-    items: ['React', 'Vite', 'Tailwind CSS', 'Next.js'],
-  },
-  {
-    title: 'Tools & Other',
-    items: ['Git', 'Figma', 'Responsive Design', 'Web Performance'],
-  },
-];
+import config from '../portfolio.config';
 
 export default function Skills() {
   return (
@@ -25,7 +12,7 @@ export default function Skills() {
         </div>
 
         <div className="grid sm:grid-cols-3 gap-6">
-          {skillGroups.map((group, groupIndex) => (
+          {config.skills.map((group, groupIndex) => (
             <div
               key={group.title}
               data-aos="zoom-in-up"
