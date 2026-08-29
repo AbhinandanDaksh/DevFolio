@@ -50,7 +50,7 @@ Open [http://localhost:5173](http://localhost:5173) in your browser.
 
 ---
 
-## ⚙️ Personalize — Edit Only These 4 Files
+## ⚙️ Personalize — Edit Only These 5 Files
 
 > **You never need to touch any component!**
 > All personal data lives in `src/config/`.
@@ -84,6 +84,22 @@ export const skills = [
     items: ['HTML5', 'CSS3', 'JavaScript'],
   },
   // add more groups...
+];
+```
+
+### `src/config/education.js` — Your education history
+```js
+export const education = [
+  {
+    degree: 'Bachelor of Technology — Computer Science',
+    institution: 'Your University Name',
+    location: 'City, Country',
+    duration: '2022 — 2026',
+    grade: 'CGPA: 8.5 / 10',
+    description: 'Brief overview of your coursework and achievements.',
+    highlights: ['Web Development', 'DSA', 'DBMS'],
+  },
+  // add more entries...
 ];
 ```
 
@@ -121,6 +137,7 @@ src/
 ├── config/                 ← Edit these to personalize
 │   ├── profile.js          ← Name, bio, roles, about, contact
 │   ├── skills.js           ← Skill groups
+│   ├── education.js        ← Education timeline
 │   ├── projects.js         ← Project cards
 │   └── social.js           ← Social links + email
 │
@@ -129,6 +146,7 @@ src/
 │   ├── Hero.jsx            ← Landing section + typewriter
 │   ├── About.jsx           ← About + animated photo
 │   ├── Skills.jsx          ← Skill cards with animations
+│   ├── Education.jsx       ← Education timeline with animations
 │   ├── Projects.jsx        ← Project cards with animations
 │   ├── Contact.jsx         ← Contact + social links
 │   ├── Footer.jsx          ← Footer
