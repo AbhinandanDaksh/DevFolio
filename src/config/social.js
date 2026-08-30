@@ -1,6 +1,5 @@
-/**
- * Social profiles displayed across the portfolio.
- */
+// Social profiles displayed across the portfolio.
+
 export const social = [
   {
     label: 'GitHub',
