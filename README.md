@@ -36,7 +36,7 @@
 
 ```bash
 # 1. Clone the repo
-git clone https://github.com/YOUR_USERNAME/portfolio.git
+git clone https://github.com/AbhinandanDaksh/DevFolio.git
 cd portfolio
 
 # 2. Install dependencies
