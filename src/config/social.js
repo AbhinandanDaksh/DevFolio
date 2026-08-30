@@ -1,3 +1,6 @@
+/**
+ * Social profiles displayed across the portfolio.
+ */
 export const social = [
   {
     label: 'GitHub',
@@ -16,5 +19,5 @@ export const social = [
   },
 ];
 
-// Exported separately for direct use in Contact and Header components
+// Contact email used in the Header and Contact sections
 export const email = 'hello@example.com';

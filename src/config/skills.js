@@ -1,3 +1,6 @@
+/**
+ * Skills grouped by category for the Skills section.
+ */
 export const skills = [
   {
     title: 'Languages & Markup',

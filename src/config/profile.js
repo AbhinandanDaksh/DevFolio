@@ -1,3 +1,6 @@
+/**
+ * Personal profile information used across the portfolio.
+ */
 export const profile = {
   name: 'Your Name',
   role: 'Full Stack Developer',
@@ -8,7 +11,7 @@ export const profile = {
   availability: 'Available for opportunities',
   resumeUrl: '/resume.pdf',
 
-  // Roles cycled through the typewriter animation in the Hero section
+  // Roles shown in the Hero typewriter animation
   roles: [
     'Full Stack Developer',
     'React Enthusiast',
@@ -16,25 +19,27 @@ export const profile = {
     'Open Source Contributor',
   ],
 
-  // Paragraphs rendered in the About section
+  // Content displayed in the About section
   about: [
     "I'm a full stack developer who loves turning ideas into clean, interactive experiences. I focus on component-based architecture, semantic HTML, and CSS that scales.",
     "When I'm not coding, I enjoy exploring new tools, contributing to open source, and keeping up with the ever-evolving web platform.",
     "I'm open to freelance projects and full-time opportunities where I can build products that users love.",
   ],
 
-  // Path to your photo inside /public — set to null to show the placeholder avatar
+  // Set to null to use the default avatar
   photoUrl: null,
   photoAlt: 'Photo of Your Name',
 
-  // Contact section heading & subtext
+  // Contact section content
   contactHeading: "Let's work together",
-  contactSubtext: "I'm open to new projects and collaborations. Drop a message and I'll get back to you.",
+  contactSubtext:
+    "I'm open to new projects and collaborations. Drop a message and I'll get back to you.",
 
-  // Footer credit line
+  // Footer text
   footerCredit: 'Designed & built with care',
 
-  // SEO meta — used in index.html
+  // SEO metadata
   seoTitle: 'Your Name — Full Stack Developer',
-  seoDescription: 'Portfolio of Your Name, a full stack developer specialising in React, Node.js, and modern web.',
+  seoDescription:
+    'Portfolio of Your Name, a full stack developer specialising in React, Node.js, and modern web.',
 };
